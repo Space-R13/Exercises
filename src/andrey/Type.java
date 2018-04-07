@@ -26,6 +26,9 @@ public class Type {
     double f2 = 1.7976931348623157E+308D;
     double f3 = 8;
 
+    char g1= 69;
+    char g2 = 'A';
+    char g3 = '\u2122';
 
 
 
