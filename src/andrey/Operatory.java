@@ -1,5 +1,8 @@
 package andrey;
 
+import java.util.Date;
+import java.util.Scanner;
+
 public class Operatory {
     int a1 = -2147483648;
     int a2 = 2147483647;
@@ -146,7 +149,11 @@ public class Operatory {
         else a9++;
         System.out.println(a9);
         System.out.println(a6);*/
-
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите: ");
+        String c = scan.nextLine();
+        System.out.println(c);
+        System.out.printf("%tc", new Date());
     }
 
 }
