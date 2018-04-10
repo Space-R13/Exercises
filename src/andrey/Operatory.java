@@ -72,6 +72,18 @@ public class Operatory {
         a6 = a8;
         System.out.println(a6); // = 4
         System.out.println(a8); // = 4
+        a6 = a7++;
+        System.out.println(a6); // = 3
+        System.out.println(a7); // = 4 прибавляет операнду 1 после вычислений
+        a6 = ++a8;
+        System.out.println(a6); // = 5
+        System.out.println(a8); // = 5 прибавляет операнду единицу до вычислений
+        a6 = a7--;
+        System.out.println(a6); // = 4
+        System.out.println(a7); // = 3
+        a6 = --a8;
+        System.out.println(a6); // = 4
+        System.out.println(a8); // = 4
 
     }
 
