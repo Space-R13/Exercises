@@ -9,6 +9,7 @@ public class Operatory {
     int a6;
     int a7 = 3;
     int a8 = 4;
+    int a9;
 
 
 
@@ -39,6 +40,8 @@ public class Operatory {
     char g1 = 69;
     char g2 = 'A';
     char g3 = '\u2122';
+    char g4;
+    char g5;
 
     boolean h1;
 
@@ -124,8 +127,25 @@ public class Operatory {
         if (i4.equals("")){
             System.out.println("Врено");
         }
-        else System.out.println("Не верно"); */
+        else System.out.println("Не верно");
 
+        a6 = i1.length(); // количество кодовых единиц в строке
+        System.out.println(a6);
+
+        a6 = i1.codePointCount(0, i1.length()); // истинная длинна символьной строки
+        System.out.println(a6);
+
+        g4 = i1.charAt(0); // первый символ
+        System.out.println(g4);
+
+        g4 = i1.charAt(5); // последний символ
+        System.out.println(g4);
+
+        a6 = i1.codePointAt(a9);
+        if (Character.isSupplementaryCodePoint(a6)) a9+=2;
+        else a9++;
+        System.out.println(a9);
+        System.out.println(a6);*/
 
     }
 
