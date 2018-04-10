@@ -11,6 +11,7 @@ public class Operatory {
     int a8 = 4;
 
 
+
 //    long b1 = -9223372036854775808;
 //    long b2 = -9223372036854775807;
 
@@ -39,12 +40,16 @@ public class Operatory {
     char g2 = 'A';
     char g3 = '\u2122';
 
-    boolean h1 = true;
+    boolean h1;
 
     String i1 = "Строка";
+    String i2;
+    String i3;
+    String i4 = "HELLO";
+    String i5 = "Hello";
 
     Operatory(){
-        a6 = (int) Math.sqrt(a5);
+        /*  a6 = (int) Math.sqrt(a5);
         System.out.println(a6); // = 4
         a6 = (int)Math.pow(a3, a5);
         System.out.println(a6); // = 64
@@ -84,6 +89,43 @@ public class Operatory {
         a6 = --a8;
         System.out.println(a6); // = 4
         System.out.println(a8); // = 4
+        if (a5 == a7 || f3 == f4){
+          System.out.println("Верно");
+         }
+         else System.out.println("Не верно");
+
+        if (a5 == a7 && f3 == f4){
+            System.out.println("Верно");
+         }
+        else {
+             System.out.println("Не верно");
+        }
+
+        i2 = i1.substring(2, 4) + "к!"; // присваиваем переменной с 3 по 4 символ строки от переменной i1 и прибавляем к ней к!
+        System.out.println(i2);
+
+        i3 = i1 + a5 + i2;
+        System.out.println(i3);
+
+        i3 = String.join(" / ", i1, "S", "M"); // разделяем знаком / елементы строк и переменной
+        System.out.println(i3);
+
+        h1 = i4.equals(i5); // проверка строк переменных на равенство
+        System.out.println(h1);
+
+        h1 = i4.equalsIgnoreCase(i5); // проверка строк переменных на равенство исключая регистр
+        System.out.println(h1);
+
+        if (i4.length() != 0){      // проверка на пустую строку
+            System.out.println("Верно");
+        }
+        else System.out.println("Не верно");
+
+        if (i4.equals("")){
+            System.out.println("Врено");
+        }
+        else System.out.println("Не верно"); */
+
 
     }
 
