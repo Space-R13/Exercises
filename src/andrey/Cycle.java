@@ -20,6 +20,11 @@ public class Cycle extends Operatory{
             a3 += a5;
             a3++;
             System.out.println(a3);
-        } while (a3 < a5);*/
+        } while (a3 < a5);
+
+        for (int i = 2; i <= a3; i++){  // Определённый цикл
+            System.out.println(i);
+        } */
+
     }
 }
