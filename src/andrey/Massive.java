@@ -16,19 +16,26 @@ public class Massive {
         mass5[1] = 6;
         mass3 = mass1;
         mass3[0] = 5;
-        int[] mass2 = {5, 6, 7, 8};
+        int[] mass2 = {7, 5, 8, 6};
         mass1 = mass2;
         mass4 = Arrays.copyOf(mass3, mass3.length);
-        System.out.println(mass1);
+        System.out.println(mass1);       // Вывод адреса массива
         System.out.println(mass2);
         System.out.println(mass3);
         System.out.println(mass4);
         System.out.println(mass5);
 
+        for (int i = 0; i < 4; i++){     // Вывод значений массива
+            mass1[i] = mass1[i];
+            System.out.println(mass1[i]);
+        }
+
+        Arrays.sort(mass1);              // Сортировка массива
         for (int i = 0; i < 4; i++){
             mass1[i] = mass1[i];
             System.out.println(mass1[i]);
         }
+
 
 
     }
