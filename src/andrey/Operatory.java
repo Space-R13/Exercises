@@ -148,12 +148,15 @@ public class Operatory {
         if (Character.isSupplementaryCodePoint(a6)) a9+=2;
         else a9++;
         System.out.println(a9);
-        System.out.println(a6);*/
-        Scanner scan = new Scanner(System.in);
+        System.out.println(a6);
+
+        Scanner scan = new Scanner(System.in); // Ввод с клавиатуры
         System.out.println("Введите: ");
         String c = scan.nextLine();
         System.out.println(c);
-        System.out.printf("%tc", new Date());
+        System.out.printf("%tc", new Date());*/
+
+
     }
 
 }
