@@ -186,6 +186,21 @@ public class Operatory {
   //      else if (a1 < a3){
   //          System.out.println("Верно");
   //      }
-        else System.out.println("Верно/ Не верно");*/
+        else System.out.println("Верно/ Не верно");
+
+        switch (a3){                        // Оператор многовариантного выбора
+            case 1:
+                System.out.println("1");
+                break;
+            case 2:
+                System.out.println("2");
+                break;
+            case 3:
+                System.out.println("3");
+                break;
+            case 4:
+                System.out.println("4");
+                break;
+        }*/
     }
 }

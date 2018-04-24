@@ -24,7 +24,14 @@ public class Cycle extends Operatory{
 
         for (int i = 2; i <= a3; i++){  // Определённый цикл
             System.out.println(i);
-        } */
+        }
+
+        int[] nums = { 1, 2, 3, 4, 5 };   // Цикл типа for each
+        int sum = 0;
+        for(int i : nums) {
+            sum += i;
+            System.out.println(sum);
+        }*/
 
     }
 }
