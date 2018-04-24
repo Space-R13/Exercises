@@ -1,5 +1,6 @@
 package andrey;
 
+import java.io.*;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -55,6 +56,10 @@ public class Operatory {
     String i5 = "Hello";
 
     Operatory(){
+        operatoryMetod();
+    }
+
+    public void operatoryMetod(){
         /*  a6 = (int) Math.sqrt(a5);
         System.out.println(a6); // = 4
         a6 = (int)Math.pow(a3, a5);
@@ -148,12 +153,39 @@ public class Operatory {
         if (Character.isSupplementaryCodePoint(a6)) a9+=2;
         else a9++;
         System.out.println(a9);
-        System.out.println(a6);*/
-        Scanner scan = new Scanner(System.in);
+        System.out.println(a6);
+
+        Scanner scan = new Scanner(System.in);  //Ввод данных
         System.out.println("Введите: ");
         String c = scan.nextLine();
         System.out.println(c);
         System.out.printf("%tc", new Date());
-    }
 
+        String username;   // Работает в консоле
+        char[] pass;
+        Console cons = System.console();
+        username = cons.readLine("Username: ");
+        pass = cons.readPassword("Password: ");
+        cons.printf("User: %s /n ", username);
+        cons.printf("Pass:  %s /n", pass);
+
+        String name = "Andrey";    // Форматирование тнкста
+        int age = 29;
+        String message = String.format("Hello, %s. Next year %d.", name, age);
+        System.out.println(message);
+
+        System.out.printf("%tc \n", new Date());    // Форматирование даты
+        System.out.printf("%1$s %2$tB %2$te, %2$tY \n", "Date: ", new Date());
+        System.out.printf("%1$s %2$td.%2$tm.%2$tY %2$tT \n", "Today's date: ", new Date());
+        System.out.printf("%1$s %2$td %2$tB %2$tY %2$tT \n", "Today's date: ", new Date());
+
+
+        if (a1 > a2){           // Условные операторы
+            System.out.println("не верно");
+        }
+  //      else if (a1 < a3){
+  //          System.out.println("Верно");
+  //      }
+        else System.out.println("Верно/ Не верно");*/
+    }
 }
